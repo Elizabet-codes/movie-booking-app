@@ -102,3 +102,40 @@ container.addEventListener("click", (e) => {
 //set initial number and total
 
 updateSelectedCount();
+
+let darkMode=localStorage.getItem('darkMode');
+
+const darkModeToggle=document.querySelector('#dark-mode-toggle');
+
+
+
+//check if dark mode is enabled
+
+
+
+const enableDarkMode=()=>{
+    //update darkMode in the local storage
+    document.body.classList.add('darkmode');
+    localStorage.setItem('darkMode', 'enabled')
+}
+
+const disableDarkMode=()=>{
+    //update darkMode in the local storage
+    document.body.classList.remove('darkmode');
+    localStorage.setItem('darkMode', null)
+}
+
+
+if(darkMode==='enabled'){
+    enableDarkMode();
+}
+
+darkModeToggle.addEventListener('click',()=>{
+    darkMode=localStorage.getItem('darkMode');
+    if(darkMode!=='enabled'){
+        enableDarkMode();
+        console.log(darkMode)
+    }else{
+        disableDarkMode();
+    }
+})

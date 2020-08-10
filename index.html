@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="movie-container">
+        <label>Pick a movie</label>
+        <select id="movie">
+            <option value="10">Up North($10)</option>
+            <option value="12">King of Boys $(12)</option>
+            <option value="8">Merry Men ($8)</option>
+            <option value="9">LionHeart($9)</option>
+            <option value="7">The wedding party($7)</option>
+            <option value="11">Chief Daddy $(11)</option>
+            <option value="12">Living in bondage ($12)</option>
+            <option value="14">Isoken ($14)</option>
+        </select>
+    </div>
+
+
+    <div class="showcase">
+        <li>
+            <div class="seat available">
+                <i class="fas fa-chair"></i>
+            </div>
+            <small>Available</small>
+        </li>
+        <li>
+            <div class="seat selected">
+                <i class="fas fa-chair"></i>
+            </div>
+            <small>Selected</small>
+        </li>
+        <li>
+            <div class="seat occupied">
+                <i class="fas fa-chair"></i>
+            </div>
+            <small>Occupied</small>
+        </li>
+    </div>
+
+
+
+    <div class="container">
+        <div class="screen">
+           
+                <h1>Choose a movie to win</h1>
+                <h3 class="typing"></h3>
+           
+           
+        </div>
+        <div class="rows">
+
+        <div class="row">
+            <div class="seat">
+                <i class="fas fa-chair available"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair available"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair available"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair available"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair available"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair available"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair available"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair occupied"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div class="seat">
+                <i class="fas fa-chair available"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair available"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair available"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair available"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair available"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair available"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair available"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair occupied"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div class="seat">
+                <i class="fas fa-chair available"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair occupied"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair available"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair available"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair available"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair available"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair available"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair occupied"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div class="seat">
+                <i class="fas fa-chair occupied"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair occupied"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair available"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair available"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair available"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair available"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair available"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair occupied"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div class="seat">
+                <i class="fas fa-chair available"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair available"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair available"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair occupied"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair available"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair available"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair available"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair occupied"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div class="seat">
+                <i class="fas fa-chair available"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair occupied"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair available"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair available"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair available"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair occupied"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair available"></i>
+            </div>
+            <div class="seat">
+                <i class="fas fa-chair occupied"></i>
+            </div>
+        </div>
+        
+       
+        </div>
+    </div>
+    </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+<p class="text">You have selected <span id="number">0</span> seats for a price of $<span id="total">0</span></p>
+
+    <script src="index.js"></script>
+</body>
+</html>
